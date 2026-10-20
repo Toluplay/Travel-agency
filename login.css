@@ -83,14 +83,15 @@ nav a:hover {
   border-color: #3b6ce0;
 }
 
-.hero-button .login-btn {
+.hero-button a:last-child {
   background: transparent;
   border-color: #fff;
 }
 
-.hero-button .login-btn:hover {
+.hero-button a:last-child:hover {
   background: rgba(255, 255, 255, 0.15);
 }
+
 
 
 .overall {
@@ -169,4 +170,21 @@ nav a:hover {
   background: #12357a;
   color: #fff;
   font-size: 14px;
+}
+@media (max-width: 800px) {
+  .hero {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .us h1 {
+    font-size: 30px;
+  }
 }

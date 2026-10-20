@@ -56,9 +56,12 @@ nav a:hover {
   border-bottom: 2px solid #ffff33;
 }
 
+.hero-button {
+  display: flex;
+  gap: 12px;
+}
 
-.hero-button a,
-.hero-button button {
+.hero-button a {
   display: inline-block;
   text-decoration: none;
   padding: 12px 20px;
@@ -68,37 +71,22 @@ nav a:hover {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
-  font-family: inherit;
   cursor: pointer;
 }
 
-.hero-button a:hover,
-.hero-button button:hover {
+.hero-button a:hover {
   background: #3b6ce0;
   border-color: #3b6ce0;
 }
 
-.hero-button .login-btn {
+.hero-button a:last-child {
   background: transparent;
   border-color: #fff;
 }
 
-.hero-button .login-btn:hover {
+.hero-button a:last-child:hover {
   background: rgba(255, 255, 255, 0.15);
 }
-
-.signup-btn {
-    background: #3878f5;
-    color: white;
-    border: 1px solid #3878f5;
-}
-
-.login-btn {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-}
-
 .middle {
     color: white;
     margin-bottom: 45px;

@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a2e;
+  background: #f5f7fb;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 6%;
+  background: #12357a;
+}
+
+.logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #4a7df0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #ffff33;
+}
+
+.hero-button {
+  display: flex;
+  gap: 12px;
+}
+
+.hero-button a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 20px;
+  border: 2px solid #4a7df0;
+  border-radius: 8px;
+  background: #4a7df0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.hero-button a:hover {
+  background: #3b6ce0;
+  border-color: #3b6ce0;
+}
+
+.hero-button .login {
+  background: transparent;
+  border-color: #fff;
+}
+
+.hero-button .login:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.us {
+  padding: 60px 6% 50px;
+  background: linear-gradient(to bottom, #12357a, #3b6ce0);
+  color: #fff;
+}
+
+.us h1 {
+  font-size: 42px;
+}
+
+.us p {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.we {
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding: 0 6%;
+}
+
+.we h1 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.we p {
+  max-width: 700px;
+  font-size: 18px;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 30px auto 70px;
+  padding: 0 6%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card-info {
+  padding: 28px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(18, 53, 122, 0.1);
+}
+
+.card-info h2 {
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.card-info span {
+  display: block;
+  color: #555;
+  font-size: 15px;
+}
+
+.footer-side {
+  padding: 24px 6%;
+  text-align: center;
+  background: #12357a;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .us h1 {
+    font-size: 30px;
+  }
+}
